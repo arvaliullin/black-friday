@@ -225,39 +225,39 @@
     </mxGraphModel>
   </diagram>
   <diagram id="p04" name="04-gateway">
-    <mxGraphModel dx="1395" dy="931" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="860" math="0" shadow="0">
+    <mxGraphModel dx="1364" dy="1022" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1920" pageHeight="1200" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="gateway" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" value="api-gateway" vertex="1">
-          <mxGeometry height="60" width="180" x="100" y="295" as="geometry" />
+          <mxGeometry height="60" width="180" x="580" y="550" as="geometry" />
         </mxCell>
         <mxCell id="api1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" value="pymongo-api-1" vertex="1">
-          <mxGeometry height="60" width="170" x="320" y="150" as="geometry" />
+          <mxGeometry height="60" width="170" x="790" y="380" as="geometry" />
         </mxCell>
         <mxCell id="redis" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontSize=13;" value="redis" vertex="1">
-          <mxGeometry height="110" width="120" x="345" y="270" as="geometry" />
+          <mxGeometry height="110" width="120" x="815" y="500" as="geometry" />
         </mxCell>
         <mxCell id="api2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" value="pymongo-api-2" vertex="1">
-          <mxGeometry height="60" width="170" x="320" y="450" as="geometry" />
+          <mxGeometry height="60" width="170" x="790" y="680" as="geometry" />
         </mxCell>
         <mxCell id="mongos" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" value="mongos" vertex="1">
-          <mxGeometry height="60" width="150" x="560" y="295" as="geometry" />
+          <mxGeometry height="60" width="150" x="1030" y="525" as="geometry" />
         </mxCell>
         <mxCell id="gconsul" parent="1" style="swimlane;startSize=32;horizontal=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#000000;fontStyle=1;fontSize=13;swimlaneFillColor=#FFFFFF;" value="consul" vertex="1">
-          <mxGeometry height="160" width="450" x="40" y="620" as="geometry" />
+          <mxGeometry height="440" width="290" x="90" y="360" as="geometry" />
         </mxCell>
         <mxCell id="c1" parent="gconsul" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;" value="consul-1" vertex="1">
-          <mxGeometry height="80" width="120" x="22" y="48" as="geometry" />
+          <mxGeometry height="90" width="120" x="85" y="66" as="geometry" />
         </mxCell>
-        <mxCell id="c2" parent="gconsul" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;" value="consul-2" vertex="1">
-          <mxGeometry height="80" width="120" x="164" y="48" as="geometry" />
+        <mxCell id="9zOTnzbwYh-O5qr2ijHH-1" parent="gconsul" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;" value="consul-2" vertex="1">
+          <mxGeometry height="90" width="120" x="85" y="192" as="geometry" />
         </mxCell>
-        <mxCell id="c3" parent="gconsul" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;" value="consul-3" vertex="1">
-          <mxGeometry height="80" width="120" x="306" y="48" as="geometry" />
+        <mxCell id="9zOTnzbwYh-O5qr2ijHH-2" parent="gconsul" style="rounded=1;whiteSpace=wrap;html=1;fontSize=13;" value="consul-3" vertex="1">
+          <mxGeometry height="90" width="120" x="85" y="318" as="geometry" />
         </mxCell>
         <mxCell id="gcfg" parent="1" style="swimlane;startSize=32;horizontal=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#000000;fontStyle=1;fontSize=13;swimlaneFillColor=#FFFFFF;" value="replica set configSrv" vertex="1">
-          <mxGeometry height="180" width="520" x="820" y="40" as="geometry" />
+          <mxGeometry height="180" width="520" x="1290" y="270" as="geometry" />
         </mxCell>
         <mxCell id="cfg2" parent="gcfg" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontSize=12;" value="configSrv-2&lt;br&gt;secondary" vertex="1">
           <mxGeometry height="110" width="120" x="24" y="48" as="geometry" />
@@ -275,7 +275,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="gs1" parent="1" style="swimlane;startSize=32;horizontal=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#000000;fontStyle=1;fontSize=13;swimlaneFillColor=#FFFFFF;" value="replica set shard1" vertex="1">
-          <mxGeometry height="180" width="520" x="820" y="235" as="geometry" />
+          <mxGeometry height="180" width="520" x="1290" y="465" as="geometry" />
         </mxCell>
         <mxCell id="s12" parent="gs1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontSize=12;" value="shard1-2&lt;br&gt;secondary" vertex="1">
           <mxGeometry height="110" width="120" x="24" y="48" as="geometry" />
@@ -293,7 +293,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="gs2" parent="1" style="swimlane;startSize=32;horizontal=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#000000;fontStyle=1;fontSize=13;swimlaneFillColor=#FFFFFF;" value="replica set shard2" vertex="1">
-          <mxGeometry height="180" width="520" x="820" y="500" as="geometry" />
+          <mxGeometry height="180" width="520" x="1290" y="660" as="geometry" />
         </mxCell>
         <mxCell id="s22" parent="gs2" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fontSize=12;" value="shard2-2&lt;br&gt;secondary" vertex="1">
           <mxGeometry height="110" width="120" x="24" y="48" as="geometry" />
@@ -311,15 +311,12 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="eBal1" edge="1" parent="1" source="gateway" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="api1" value="балансировка">
-          <mxGeometry relative="1" x="0.3481" as="geometry">
-            <Array as="points">
-              <mxPoint x="250" y="295" />
-              <mxPoint x="250" y="180" />
-            </Array>
-          </mxGeometry>
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eBal2" edge="1" parent="1" source="gateway" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;exitX=0.85;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="api2" value="балансировка">
-          <mxGeometry relative="1" x="0.1604" as="geometry" />
+        <mxCell id="eBal2" edge="1" parent="1" source="gateway" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="api2" value="балансировка">
+          <mxGeometry relative="1" x="0.0057" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="eCache1" edge="1" parent="1" source="api1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="redis" value="кеш">
           <mxGeometry relative="1" as="geometry" />
@@ -330,37 +327,39 @@
         <mxCell id="eQ1" edge="1" parent="1" source="api1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.3;entryDx=0;entryDy=0;" target="mongos" value="запрос">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="540" y="180" />
-              <mxPoint x="540" y="313" />
+              <mxPoint x="1010" y="410" />
+              <mxPoint x="1010" y="543" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="eQ2" edge="1" parent="1" source="api2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.7;entryDx=0;entryDy=0;" target="mongos" value="запрос">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="540" y="480" />
-              <mxPoint x="540" y="337" />
+              <mxPoint x="1010" y="710" />
+              <mxPoint x="1010" y="567" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="eReg1" edge="1" parent="1" source="api1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;exitX=0.15;exitY=0;exitDx=0;exitDy=0;entryX=0.109;entryY=-0.009;entryDx=0;entryDy=0;entryPerimeter=0;" target="gconsul" value="регистрация">
-          <mxGeometry relative="1" x="0.0381" as="geometry" />
+        <mxCell id="eReg1" edge="1" parent="1" source="api1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="gconsul" value="регистрация">
+          <mxGeometry relative="1" x="-0.248" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="530" y="380" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="eReg2" edge="1" parent="1" source="api2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.81;entryY=0;entryDx=0;entryDy=0;" target="gconsul" value="регистрация">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="eReg2" edge="1" parent="1" source="api2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" target="gconsul" value="регистрация">
+          <mxGeometry relative="1" x="-0.1282" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="eDisc" edge="1" parent="1" source="gateway" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;exitX=0.182;exitY=1.035;exitDx=0;exitDy=0;entryX=0.2;entryY=0;entryDx=0;entryDy=0;exitPerimeter=0;" target="gconsul" value="состав">
-          <mxGeometry relative="1" x="-0.2004" as="geometry">
-            <Array as="points">
-              <mxPoint x="132.8" y="355" />
-              <mxPoint x="130" y="355" />
-            </Array>
+        <mxCell id="eDisc" edge="1" parent="1" source="gateway" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="gconsul" value="состав">
+          <mxGeometry relative="1" x="0.0405" as="geometry">
+            <mxPoint x="370" y="560" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="eGcfg" edge="1" parent="1" source="mongos" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="gcfg">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="635" y="130" />
+              <mxPoint x="1105" y="360" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -368,7 +367,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="eGs2" edge="1" parent="1" source="mongos" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="gs2">
-          <mxGeometry relative="1" x="0.1982" as="geometry" />
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
