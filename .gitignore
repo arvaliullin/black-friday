@@ -24,6 +24,6 @@ Thumbs.db
 *.swp
 *.swo
 
-# Diagram backups, including schemas/.$task1.drawio.bkp
+# Diagram backups, including schemas/.$architecture.drawio.bkp
 *.drawio.bkp
 *.bak
