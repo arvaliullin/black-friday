@@ -14,7 +14,7 @@
 | `opcounters`, `opLatencies` | `serverStatus` на primary каждого шарда | Один шард выполняет около 70% операций `products` |
 | `currentQueue` | `serverStatus.globalLock` | Очередь копится только на одном primary |
 | Jumbo и балансировщик | `sh.status()` | Чанк категории нельзя перенести, балансировщик выключен или миграция зависла |
-| Лаг реплики | `replSetGetStatus` | Secondary горячего шарда отстает |
+| Лаг реплики | `replSetGetStatus` | Secondary горячего шарда отстает. Пока лаг не спал, каталог с него не читать |
 
 Число чанков считается через `mongos`:
 

@@ -164,6 +164,10 @@ db.carts.updateOne(
 )
 db.carts.findOne({ owner_key: "session-1", status: "active" })
 db.carts.updateOne(
+  { owner_key: "session-1", status: "active" },
+  { $push: { items: { product_id: "phone-x", quantity: 1 } }, $set: { updated_at: new Date() } }
+)
+db.carts.updateOne(
   { owner_key: "session-1", status: "active", "items.product_id": "phone-x" },
   { $set: { "items.$.quantity": 2, updated_at: new Date() } }
 )
@@ -185,7 +189,7 @@ db.carts.updateOne(
 )
 ```
 
-Точечные запросы в `explain("executionStats")` дают `SINGLE_SHARD`. Каталог дает `SHARD_MERGE`. Если корзины покупателя еще нет, перед слиянием она создается с `owner_key`, равным `user_id`. Новая позиция в корзине добавляется через `$push`.
+Точечные запросы в `explain("executionStats")` дают `SINGLE_SHARD`. Каталог дает `SHARD_MERGE`. Если корзины покупателя еще нет, перед слиянием она создается с `owner_key`, равным `user_id`.
 
 ## Мониторинг
 

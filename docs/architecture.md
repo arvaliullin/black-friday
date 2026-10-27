@@ -16,3 +16,4 @@
 - [Схемы коллекций для шардирования](collections.md)
 - [Горячие шарды](hot-shards.md)
 - [Чтение с реплик](reads.md)
+- [Переход на Cassandra](cassandra.md)
